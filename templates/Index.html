@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>
+        WordCount Website
+    </title>
+</head>
+<body>
+<form action="{% url 'count' %}">
+    <textarea name="txtContent" rows="5" cols="10"></textarea>
+    <br>
+    <input type="submit" value="Count">
+</form>
+<a href="{% url 'about' %}">About us</a>
+</body>
+</html>

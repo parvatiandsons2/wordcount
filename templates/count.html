@@ -1,0 +1,15 @@
+<a href="{% url 'home' %}">Back to Home</a>
+<h1>Counted!</h1>
+Text {{ data }}
+Length {{ len }}
+<br>
+<br>
+{{ dic }}
+
+<br>
+<br>
+<ul>
+    {% for word,value in objDataDictionary %}
+    <li>{{ word }} = {{ value }}</li>
+    {% endfor %}
+</ul>
